@@ -1,12 +1,27 @@
 # لینوکس از صفر
-The Persian translation of the LFS book
+
+<img src="https://raw.githubusercontent.com/AliShahabzadeh/Linux-AZ-SEFR/main/src/lfs-logo.png" width="200" />
+
+The Persian translation of the book "Linux from Scratch".
 
 در اینجا قصد دارم به صورت دوره‌ای ترجمه کتاب لینوکس از صفر (Linux from Scratch) را قرار دهم.
 
-## فرمت
-فایل ها با فرمت Tex ایجاد شده‌اند و برای استفاده از آن‌ها باید کامپایلر مربوطه را دانلود و نصب کنید.
+## توضیحات کتاب
+لینوکس از صفر (Linux from Scratch) نوشته Gerard Beekmans کتابی است که راهنمای ساخت یک سیستم لینوکس سفارشی از ابتدا با کامپایل و پیکربندی دستی تمام اجزا زا ارائه می‌دهد و به کاربران در درک عمیق‌تر ساختار داخلی لینوکس کمک می‌کند. 
 
-### Credit
+## فرمت
+فایل ها با فرمت Tex ایجاد شده‌اند و برای استفاده از آن‌ها باید کامپایلر مربوطه را دانلود و نصب کنید.  
+  
+برای این کار می‌توانید از نرم‌افزار‌های زیر استفاده کنید:  
+  
+Windows, MacOS and Linux:
+* [TeX Live](https://www.tug.org/texlive/)
+* [MiKTeX](https://miktex.org/)  
+  
+MacOS:
+* [MacTeX](https://tug.org/mactex/)
+  
+## License & Attribution
 #### Original Work:
 - **Title:** Linux from Scratch  
 - **Author:** Gerard Beekmans and the Linux from Scratch community  
