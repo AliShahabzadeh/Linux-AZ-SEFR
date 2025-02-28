@@ -33,7 +33,7 @@ MacOS:
 ## License & Attribution
 #### Original Work:
 - **Title:** Linux from Scratch  
-- **Author:** Gerard Beekmans and the Linux from Scratch community  
+- **Author:** Gerard Beekmans  
 - **Original Source:** [http://www.linuxfromscratch.org/](http://www.linuxfromscratch.org/)  
 - **License:** Creative Commons Attribution-NonCommercial-ShareAlike 2.0  
   ([CC BY-NC-SA 2.0](https://creativecommons.org/licenses/by-nc-sa/2.0/))  
