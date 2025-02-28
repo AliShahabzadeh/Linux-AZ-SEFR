@@ -1,6 +1,6 @@
 # لینوکس از صفر
 
-<img src="https://raw.githubusercontent.com/AliShahabzadeh/Linux-AZ-SEFR/main/src/lfs-logo.png" width="200" />
+<img src="https://www.linuxfromscratch.org/images/lfs-logo.png" width="200" />
 
 The Persian translation of the book "Linux from Scratch".
 
@@ -20,11 +20,20 @@ Windows, MacOS and Linux:
   
 MacOS:
 * [MacTeX](https://tug.org/mactex/)
-  
+
+## فونت
+فونت پیش‌فرض فایل Times New Roman است، در صورتی که تمایل به کامپایل فایل کتاب با فونتی دیگر دارید، می‌توانید نام فونت مدنظر نصب شده روی سیستم خود را در خط ۱۳ قرار دهید:  
+</br>
+```TeX
+% SET DOCUEMNT FONT
+\settextfont{<RELATED_FONT>}
+```
+</br>
+
 ## License & Attribution
 #### Original Work:
 - **Title:** Linux from Scratch  
-- **Author:** Gerard Beekmans and the Linux from Scratch community  
+- **Author:** Gerard Beekmans  
 - **Original Source:** [http://www.linuxfromscratch.org/](http://www.linuxfromscratch.org/)  
 - **License:** Creative Commons Attribution-NonCommercial-ShareAlike 2.0  
   ([CC BY-NC-SA 2.0](https://creativecommons.org/licenses/by-nc-sa/2.0/))  
