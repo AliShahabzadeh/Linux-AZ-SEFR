@@ -206,4 +206,136 @@
     
 \end{itemize}
 
+
+
+% SECTION 1.5. LFS AND STANDARDS
+\newpage
+
+\section{استانداردها}
+
+ساختار لینوکس از صفر تا حد امکان از استانداردهای لینوکس پیروی می‌کند. استانداردهای اولیه شامل موارد زیر هستند:
+
+\begin{flushleft}
+
+
+	\href{https://pubs.opengroup.org/onlinepubs/9699919799/}{POSIX.1-2008  •}\\
+	\href{https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html}{0.3 Version (FHS) Standard Hierarchy Filesystem  •}\\
+	\href{https://refspecs.linuxfoundation.org/lsb.shtml}{(2015) 0.5 Version (LSB) Base Standard Linux  •}\\
+	
+\end{flushleft}
+
+\begin{flushright}
+
+استاندارد LSB دارای چهار مشخصه‌ی جداگانه است: Core، Desktop، Languages و .Imaging برخی از بخش‌های Core و Desktop وابسته به معماری سیستم هستند. همچنین دو مشخصه‌ی آزمایشی با نام‌های Gtk3 و Graphics نیز وجود دارند. همان‌طور که در بخش قبل گفته شد، لینوکس از صفر تلاش می‌کند تا مشخصه‌های LSB با معماری‌های IA32 (۳۲ بیتی (x86 و AMD (x86\_64) سازگار باشند.
+	\newline 
+
+\end{flushright}
+
+\hrule
+
+\vspace{15pt}
+
+> توجه
+\newline
+\par
+بسیاری از کاربران با این پیش‌نیازها موافق نیستند. هدف اصلی LSB تضمین قابلیت نصب نرم‌افزارهای اختصاصی بر روی سیستم‌های سازگار با آن است. از آن‌جایی که پروژه‌ی لینوکس از صفر بر پایه‌ی سورس‌کد است، کاربر کنترل کاملی بر بسته‌های موردنیاز خود دارد؛ بنابراین، ممکن است بسته‌ای که در استاندارد LSB مشخص شده است، نصب نکند.
+
+\vspace{15pt}
+
+\hrule
+
+\vspace{15pt}
+
+\par
+بااین‌حال، ساخت یک سیستم کامل "از صفر" که به‌طور کامل با استانداردهای LSB مطابقت داشته باشد، ممکن است؛ اما این کار بدون استفاده از بسیاری از بسته‌های جانبی فراتر از بسته‌های معرفی‌شده در این کتاب امکان‌پذیر نیست. دستورالعمل‌های نصب برخی از این بسته‌ها را می‌توانید در کتاب "فراتر از لینوکس از صفر" مشاهده کنید.
+\newline
+
+\begin{flushright}
+بسته‌های عرضه شده توسط “لینوکس از صفر” برای برآوردن الزامات :LSB
+\end{flushright}
+
+\begin{LTR} 
+
+	\vspace{0.1cm}
+
+	\begin{tabular}{@{} l l @{}}
+		\textit{LSB Core:} & Bash, Bc, Binutils, Coreutils, \\ 
+					&Diffutils, File, Findutils, Gawk, \\
+					& GCC, Gettext, Glibc, Grep, \\ 
+					&Gzip, M4, Man-DB, Procps, \\
+					& Psmisc, Sed, Shadow, \\ 
+					&SysVinit, Tar, Util-linux, Zlib \\
+					\\
+		\textit{LSB Desktop:} & None \\
+		\textit{LSB Languages:} & Perl \\
+		\textit{LSB Imaging:} & None \\
+		\textit{LSB Gtk3 and LSB Graphics (Trial Use):} & None \\
+	\end{tabular}
+
+\end{LTR}
+
+\newpage
+
+\begin{flushright}
+بسته‌های عرضه شده توسط “فراتر از لینوکس از صفر” برای برآوردن الزامات :LSB
+\end{flushright}
+
+\begin{LTR} 
+
+	\vspace{0.1cm}
+
+	\begin{tabular}{@{} l l @{}}
+		\textit{LSB Core:} & At, Batch (a part of At),\\ 
+					&BLFS Bash Startup Files, Cpio,\\
+					&Ed, Fcrontab, LSB-Tools,\\ 
+					&NSPR, NSS, Linux-PAM,\\
+					&Pax, Sendmail (or Postfix or Exim),\\
+					&Time\\
+    					\\
+		\textit{LSB Desktop:} & Alsa, ATK, Cairo,\\ 
+						&Desktop-file-utils, Freetype,\\
+						&Fontconfig, Gdk-pixbuf, Glib2,\\ 
+						&GLU, Icon-naming-utils,\\
+						&Libjpeg-turbo, Libxml2,\\
+						&Mesa, Pango, Xdg-utils,\\
+						&Xorg\\
+						\\
+		\textit{LSB Languages:} & Libxml2, Libxslt \\
+		\textit{LSB Imaging:} & CUPS, Cups-filters, Ghostscript, SANE \\
+		\textit{LSB Gtk3 and LSB Graphics (Trial Use):} & GTK+3 \\
+	\end{tabular}
+
+\end{LTR}
+
+\vspace{0.5cm}
+
+\begin{flushright}
+اجزای موردنیاز تامین نشده یا به صورت جزئی تامین شده توسط “لینوکس از صفر” یا “فراتر از لینوکس از صفر” برای برآوردن الزامات :LSB
+\end{flushright}
+
+\begin{LTR} 
+
+	\vspace{0.1cm}
+
+	\begin{tabular}{@{} l l @{}}
+		\textit{LSB Core:} & install\_initd,\\ 
+					& libcrypt.so.1,\\
+					& libncurses.so.5,\\
+					& libncursesw.so.5\\
+					\\
+		\textit{LSB Desktop:} & libgdk-x11-2.0.so,\\
+						&  libgtk-x11-2.0.so,\\
+						& libpng12.so,\\
+						& libQt*.so.4,\\
+						& libtiff.so.4\\
+						\\
+		\textit{LSB Languages:} & /usr/bin/python \\
+		\textit{LSB Imaging:} & None\\
+		\textit{LSB Gtk3 and LSB Graphics (Trial Use):} & libpng15.so \\
+	\end{tabular}
+
+\end{LTR}
+
+\vspace{0.5cm}
+
 \end{document}
